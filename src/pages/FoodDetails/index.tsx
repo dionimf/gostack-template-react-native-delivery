@@ -81,7 +81,7 @@ const FoodDetails: React.FC = () => {
       });
 
       setExtras(
-        response.data.extra.map((extra: Omit<Extra, 'quantity'>) => ({
+        response.data.extras.map((extra: Omit<Extra, 'quantity'>) => ({
           ...extra,
           quantity: 0,
         })),
